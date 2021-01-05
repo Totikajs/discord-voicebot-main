@@ -41,13 +41,13 @@ totika.on("voiceStateUpdate", async(oldState, newState) => {
                 play()
 
                 console.log(staffs, "çalıyor")
+            } else {
                 await vc.play(".mp4")
                 console.log(`Yetkili girdi`)
             }
         }
     }
 })
-
 
 // Totika Tarafından Geliştirilmiştir.
 // Totika Tarafından Geliştirilmiştir.
