@@ -1,0 +1,9 @@
+
+bot: 
+   token: "TOKEN"
+   prefix: "PREİFX"
+   owners: ["OWNERİD","OWNERİD"]
+
+server: 
+   voiceChannel: "ses kanal id"
+   register: "ROL İD"
