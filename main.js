@@ -35,7 +35,7 @@ totika.on("voiceStateUpdate", async(oldState, newState) => {
                 vc.play(".mp4")
 
                 const play = () => {
-                    const dispatcher = vc.play(p4").on('finish', play)
+                    const dispatcher = vc.play("p4").on('finish', play)
                 }
 
                 play()
