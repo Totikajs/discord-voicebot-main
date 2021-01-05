@@ -35,14 +35,14 @@ totika.on("voiceStateUpdate", async(oldState, newState) => {
                 vc.play(".mp4")
 
                 const play = () => {
-                    const dispatcher = vc.play("p4").on('finish', play)
+                    const dispatcher = vc.play("SES DOSYASI MP3").on('finish', play)
                 }
 
                 play()
 
                 console.log(staffs, "çalıyor")
             } else {
-                await vc.play(".mp4")
+                await vc.play("SES DOSYASI MP3")
                 console.log(`Yetkili girdi`)
             }
         }
