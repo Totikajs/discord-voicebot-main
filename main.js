@@ -34,7 +34,7 @@ totika.on("voiceStateUpdate", async(oldState, newState) => {
 
                 vc.play()
 
-                const play = ("Default_files/dosya.mp3") => {
+                const play = vc.play("Default_files/dosya.mp3") => {
                     const dispatcher = vc.play("Default_files/dosya.mp3").on('finish', play)
                 }
 
