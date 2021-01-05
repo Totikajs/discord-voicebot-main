@@ -25,24 +25,23 @@ totika.on("ready", () => {
 
 
 totika.on("voiceStateUpdate", async(oldState, newState) => {
-    if (!oldState.channelID && newState.channelID && newState.member.id != totika.user.id) {
+    if (!oldState.channelID && newState.channelID && newState.member.id != bot.user.id) {
         let staffs = newState.guild.members.cache.filter(x => x.roles.cache.has(config.server.register) && x.hasPermission("ADMINISTRATOR")).map(x => x.id) // YETKİLİ ROL
         if (newState.channelID === config.server.voiceChannel) {
             let vc = await newState.channel.join()
 
-            if (!newState.channel.members.filter(x => x.id != totika.user.id).some(r => (staffs.includes(r.id) || r.hasPermission("ADMINISTRATOR")))) { //Yetkili yok hoşgeldin oynatma
+            if (!newState.channel.members.filter(x => x.id != bot.user.id).some(r => (staffs.includes(r.id) || r.hasPermission("ADMINISTRATOR")))) { //Yetkili yok hoşgeldin oynatma
 
-                vc.play()
+                vc.play(".mp4")
 
-                const play = vc.play("Default_files/dosya.mp3") => {
-                    const dispatcher = vc.play("Default_files/dosya.mp3").on('finish', play)
+                const play = () => {
+                    const dispatcher = vc.play(p4").on('finish', play)
                 }
 
                 play()
 
                 console.log(staffs, "çalıyor")
-            } else {
-                await vc.play("Default_files/dosya.mp3")
+                await vc.play(".mp4")
                 console.log(`Yetkili girdi`)
             }
         }
