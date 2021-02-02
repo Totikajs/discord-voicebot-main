@@ -2,4 +2,4 @@
 # https://discord.gg/serendia
 Totika Tarafından Geliştirildi
 
-Bir Sorun Çıktıysa Bana Ulaşabilirsiniz: Totika.#0001
+Bir Sorun Çıktıysa Bana Ulaşabilirsiniz: Totika.#9999
