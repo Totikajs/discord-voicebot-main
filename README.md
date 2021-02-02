@@ -1,5 +1,4 @@
 # Yakın Zamanda Yapılış Videosu Yapılacaktır.
-# https://discord.gg/musical
 # https://discord.gg/serendia
 Totika Tarafından Geliştirildi
 
